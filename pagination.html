@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    <style>
+      .cell-no {
+        text-align: right;
+      }
+
+      .cell-title {
+        text-transform: capitalize;
+      }
+
+      .cell-completed {
+        text-align: center;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+      }
+
+      .pagination span {
+        border: 1px solid grey;
+        margin: 10px 5px 0 0;
+        padding: 5px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .pagination span:last-child {
+        margin-right: 0;
+      }
+
+      .pagination span.active {
+        background-color: grey;
+        cursor: auto;
+      }
+
+      .pagination span.disabled {
+        background-color: lightgray;
+        cursor: auto;
+      }
+    </style>
+    <script src="pagination.js" defer></script>
+  </head>
+  <body>
+    <table width="100%" border="1" cellpadding="5px">
+      <thead>
+        <tr>
+          <th width="30px">albumId</th>
+          <th>id</th>
+          <th>title</th>
+          <th>url</th>
+          <th>thumbnailUrl</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pagination">
+      <!-- <span class="disabled">First</span> -->
+      <!-- <span class="prev disabled">Prev</span> -->
+      <!-- <span class="number active">1</span>
+      <span class="number">2</span>
+      <span class="number">3</span> -->
+      <!-- <span class="next">Next</span> -->
+      <!-- <span>Last</span> -->
+    </div>
+  </body>
+</html>
